@@ -1,8 +1,8 @@
 # Configurations
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
-author:           HE Tao
-email:            sighingnow@gmail.com
+title:            Allegro in C(++)
+longtitle:        EECS106A Final Project: Allegro in C(++)
+author:           Laurance Lau
+email:            laurance.lau@berkeley.edu
 description: >
   Build Jekyll site with the GitBook style.
 
