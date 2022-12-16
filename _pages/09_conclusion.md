@@ -19,7 +19,7 @@ results placeholder
 
 # Difficulties
 
-Many difficulties directly arose from choosing the Wio Terminal to be our microcontroller, as it was poorly documented and was not compatible with as many parts as expected. Our signal processing uses the [arduinoFFT library](https://www.arduino.cc/reference/en/libraries/arduinofft/) which was also lacking in documentation.
+Many difficulties directly arose from choosing the Wio Terminal to be our microcontroller, as it was poorly documented and was not compatible with as many parts as expected; the driver for our purchased microphone turned out to be outdated and unusable. Our signal processing uses the [arduinoFFT library](https://www.arduino.cc/reference/en/libraries/arduinofft/) which was also lacking in documentation.
 
 One stretch goal we had was to play multiple notes or chords at once using multiple fingers. However, it is difficult to detect several notes at once since amplitude thresholding is impractical with audio input using the Wio Terminal. Prior knowledge of the number of notes played over time would be necessary.
 
