@@ -15,7 +15,13 @@ appropriate visuals. This includes launch files, URDFs, etc.
 
 • How does your complete system work? Describe each step.
 
+# Overview
 The complete system begins at accepting audio input, processing the audio to obtain the corresponding piano keys and durations, then operating the motors to physically press on the keys. Finally, the system prepares itself to run again.
+
+# Hardware
+We 3D printed our own end effector and mounted it onto a gantry that allows horizontal movement . . .
+
+(pics and vids)
 
 # Signal Processing
 We use a Wio Terminal that we own for both signal processing and path planning. This is convenient because all code runs on one device, but this sacrifices computing power compared to that available on a computer. MATLAB code designed to be run on a computer was written before porting it to the Wio Terminal, and we ultimately decided to use the Wio Terminal alone because it cost extra effort to transfer data from the computer to the Wio Terminal.
@@ -34,3 +40,8 @@ The detected frequency is continually printed in the Serial Monitor in the botto
 [![Signal processing demo](https://img.youtube.com/vi/JzqSpP-Z4GE/0.jpg)](https://www.youtube.com/watch?v=JzqSpP-Z4GE)
 
 # Path Planning
+The input to this stage are the key-duration pairs obtained from signal processing . . .
+
+Rezeros after every trial. . .
+
+(pics and vids)
