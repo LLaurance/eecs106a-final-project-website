@@ -15,3 +15,12 @@ layout: post
 • any additional videos, images, or data from your finished solution
 
 • links to other public sites (e.g., GitHub), if that is where your files are stored
+
+# CAD model
+(placeholder)
+
+# Code
+https://llaurance.github.io/eecs106a-final-project-website/
+
+# Additional demos
+(placeholder)
