@@ -6,15 +6,6 @@ category: Jekyll
 layout: post
 ---
 
-Describe any hardware you used or built. Illustrate with pictures and diagrams.
-
-• What parts did you use to build your solution?
-
-• Describe any software you wrote in detail. Illustrate with diagrams, flow charts, and/or other
-appropriate visuals. This includes launch files, URDFs, etc.
-
-• How does your complete system work? Describe each step.
-
 # Overview
 The complete system begins at accepting audio input, processing the audio to obtain the corresponding piano keys and durations, then operating the motors to physically press on the keys. Finally, the system prepares itself to run again.
 
