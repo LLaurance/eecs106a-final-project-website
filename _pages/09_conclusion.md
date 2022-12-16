@@ -13,9 +13,9 @@ layout: post
 • Does your solution have any flaws or hacks? What improvements would you make if you had
 additional time?
 
-# Results
+# Discussion
 
-results placeholder
+results discussion placeholder
 
 # Difficulties
 
