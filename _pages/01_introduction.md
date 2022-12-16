@@ -12,8 +12,11 @@ Allegro in C(++) is an exploration of using robots to create music. Our goal was
 Points of Interest:
 This project involves imitating a human activity, and is accomplished by splitting the task into multiple components that a computer can process. To attain success, a wide variety of problems must be solved:
 • Sensing: Using only a microphone and signal processing, convert audio from a speaker into notes and durations.
+
 • Planning: Compute a path that moves Allegro’s hand to the proper keys, while minimizing distance traveled and taking advantage of its finger configuration.
+
 • Actuation: Move Allegro’s hand using a linear rail system, and determine proper servo angles for key actuation.
+
 • Hardware: Adapt a linear rail system to fit project needs. Design and manufacture a hand capable of playing a keyboard.
 
 Applications:
