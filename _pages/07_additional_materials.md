@@ -20,7 +20,7 @@ layout: post
 (placeholder)
 
 # Code
-https://llaurance.github.io/eecs106a-final-project-website/
+[Link to repository](https://llaurance.github.io/eecs106a-final-project-website/)
 
 # Additional demos
 (placeholder)
