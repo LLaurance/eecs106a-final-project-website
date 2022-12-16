@@ -26,6 +26,9 @@ The input audio is converted into frequencies which are then mapped to their cor
 
 Noise reduction is done through thresholding by duration. Regular filtering is ineffective if the noise intrudes into frequencies of interest, and amplitude thresholding is difficult since the amplitude obtained from the built-in microphone of the Wio Terminal can be temporarily affected by loud audio. We arbitrarily designate a duration threshold such that only notes that are three frames or longer will survive.
 
+Click the image below for a demo!
+The detected frequency is continually printed in the Serial Monitor in the bottom-left and plotted in the bottom-right, and the screen of the Wio Terminal is showing the piano key corresponding to the frequency along with a countdown to 10 seconds. Pressing the top-left button then letting it go begins the countdown. Since the button makes enough noise to affect the resulting frequency, the audio input only begins after the button is released.
+
 [![Signal processing demo](https://img.youtube.com/vi/JzqSpP-Z4GE/0.jpg)](https://www.youtube.com/watch?v=JzqSpP-Z4GE)
 
 # Path Planning
