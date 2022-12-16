@@ -15,6 +15,8 @@ appropriate visuals. This includes launch files, URDFs, etc.
 
 • How does your complete system work? Describe each step.
 
+The complete system begins at accepting audio input, processing the audio to obtain the corresponding piano keys and durations, then operating the motors to physically press on the keys. Finally, the system prepares itself to run again.
+
 # Signal Processing
 We use a Wio Terminal that we own for both signal processing and path planning. This is convenient because all code runs on one device, but this sacrifices computing power compared to that available on a computer. MATLAB code designed to be run on a computer was written before porting it to the Wio Terminal, and we ultimately decided to use the Wio Terminal alone because it cost extra effort to transfer data from the computer to the Wio Terminal.
 
