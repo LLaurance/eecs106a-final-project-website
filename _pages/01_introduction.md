@@ -13,4 +13,4 @@ solution work?
 
 • In what real-world robotics applications could the work from your project be useful?
 
-Our goal is to have our robot listen to a series of musical notes played by the user, then play the sequence itself on an electronic keyboard using a Sawyer robot and an end effector resembling a hand.
+Our goal is to have our robot listen to a series of musical notes played by the user, then replicate the sequence itself on an electronic keyboard using an end effector resembling a hand.
