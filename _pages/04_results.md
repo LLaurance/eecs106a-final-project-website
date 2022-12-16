@@ -6,6 +6,8 @@ category: Jekyll
 layout: post
 ---
 
-• How well did your project work? What tasks did it perform?
+# Performance
 
-• Illustrate with pictures and at least one video.
+The robot is able to perform this task and the project worked this well.
+
+(pics and at least one vid)
