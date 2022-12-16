@@ -6,11 +6,6 @@ category: Jekyll
 layout: post
 ---
 
-• Describe the end goal of your project.
+Our goal is to have our robot listen to a series of musical notes played by the user, then replicate the sequence itself on an electronic keyboard using an end effector resembling a hand. Our project is interesting because it involves imitating a human activity through a robotic arm. It requires expertise in and integration of diverse fields, including computer-aided design, 3D printing, and signal processing, to come to fruition.
 
-• Why is this an interesting project? What interesting problems do you need to solve to make your
-solution work?
-
-• In what real-world robotics applications could the work from your project be useful?
-
-Our goal is to have our robot listen to a series of musical notes played by the user, then replicate the sequence itself on an electronic keyboard using an end effector resembling a hand.
+Our project is a proof of concept that opens the possibility of more advanced robotic keyboard playing in this specific case and automated musical instrumentals and ensembles in general.
