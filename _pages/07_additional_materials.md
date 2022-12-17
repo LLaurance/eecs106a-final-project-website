@@ -19,4 +19,4 @@ layout: post
 [MG90S Datasheet](https://html.alldatasheet.com/html-pdf/1132104/ETC2/MG90S/109/1/MG90S.html)
 
 ## Old Concept Sketch
-![Old Concept Sketch](https://github.com/LLaurance/eecs106a-final-project-website/blob/master/assets/setup_cursed.png)
+![Old Concept Sketch](../assets/setup_cursed.png)
