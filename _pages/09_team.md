@@ -12,7 +12,7 @@ Pending
 
 **Laurance Lau:** laurance.lau@~
 
-I'm a fifth year Computer Science and Cognitive Science major. I had no prior robotics experience and little Arduino programming experience.
+I'm a fifth year Computer Science and Cognitive Science major. I had minimal robotics experience and little Arduino programming experience prior to this project.
 
 I wrote the signal processing portion of the code and provided debugging assistance wherever necessary.
 
@@ -26,6 +26,12 @@ I designed and manufactured the hand component of Allegro. Iterated to fit chang
 
 I’m a third year Bioengineering major minoring in EECS, particularly interested in the applications of robotics to biomedical fields. I have been a part of various robotics teams for the last 6-7 years and have experience in mechanical, electrical, and software engineering. In the future, I hope to apply the concepts I’ve learned in this class and through this project to work on medical robotics or electromechanical medical devices.
 
-I wrote the path planning algorithm and stepper/servo actuation software, worked to integrate it with the signal processing code, and contributed to debugging electrical/hardware components. 
+I wrote the path planning algorithm and stepper/servo actuation software, worked to integrate it with the signal processing code, and contributed to debugging electrical/hardware components.
 
 ~ = berkeley.edu
+
+## Cleaning the lab!
+
+Wiped down the table
+
+![Wiped down the table](https://github.com/LLaurance/eecs106a-final-project-website/blob/master/assets/IMG_1292.jpeg)
