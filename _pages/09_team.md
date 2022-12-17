@@ -8,13 +8,13 @@ layout: post
 
 **Colin Knizek:** knizek@~
 
-Pending
+I am a 4th year undergraduate Data Science major (minoring in EE/CS). I am interested in the intersection between neuroprosthetics and data science. 
 
 **Laurance Lau:** laurance.lau@~
 
-I'm a fifth year Computer Science and Cognitive Science major. I had minimal robotics experience and little Arduino programming experience prior to this project.
+I am a fifth year Computer Science and Cognitive Science major. I had minimal robotics experience and little Arduino programming experience prior to this project.
 
-I wrote the signal processing portion of the code and provided debugging assistance wherever necessary.
+I wrote the signal processing portion of the code, tailored conventional techniques for our purposes, and provided debugging assistance wherever necessary.
 
 **Derrick Ma:** derrickma@~
 
