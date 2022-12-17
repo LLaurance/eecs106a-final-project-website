@@ -8,7 +8,13 @@ layout: post
 
 **Colin Knizek:** knizek@~
 
-I am a 4th year undergraduate Data Science major (minoring in EE/CS). I am interested in the intersection between neuroprosthetics and data science. 
+Colin is a 4th year undergraduate Data Science major (minoring in EE/CS). They are interested in the intersection between neuroprosthetics and data science.
+
+Colin's contributions include:
+- The hardware implementation: including the linear rail actuation system, with corresponding wiring and mechanical components. 
+- Sourcing a working piano system for the group.
+- Performing hardware debugging. This involved diagnosing and resolving hardware-related issues, such as with the I2C/I2S communication protocols and interfacing the servos with the Wio Terminal.
+- Creating the team Slack.
 
 **Laurance Lau:** laurance.lau@~
 
@@ -34,4 +40,14 @@ I wrote the path planning algorithm and stepper/servo actuation software, worked
 
 Wiped down the table
 
-![Wiped down the table](../assets/IMG_1292.jpeg)
+![Wiped down the table](https://i.imgur.com/FiDU2ci.jpeg)
+
+Tidied up the place
+
+![Tidied up the place](https://i.imgur.com/RxjnzBL.jpeg)
+
+![Tidied up the place](https://i.imgur.com/9C8GKxW.jpeg)
+
+![Tidied up the place](https://i.imgur.com/2Tw41kX.jpeg)
+
+![Tidied up the place](https://i.imgur.com/96LdkZv.jpeg)
