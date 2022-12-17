@@ -16,7 +16,11 @@ There were many difficulties on our journey to the finished solution. Much of ou
 
 **I2S Microphone:** We were unable to integrate the I2S microphone into our hardware implementation with the Wio Terminal MCU. This was due to the lack of low-level driver support and lack of documentation as to the pinout for the MCU.
 
+![I2S Microphone](https://i.imgur.com/EVkyXqI.jpeg)
+
 **TB6600/Stepper Motor:** Integrating our stepper motor required finding the appropriate pulse sequence, microstepping configuration, and power settings. We struggled controlling the stepper motor correctly at its highest speed because of problems wiring the stepper motor to the driver and working with varying microstepping levels.
+
+![Stepper Motor](https://i.imgur.com/bhtPxal.jpeg)
 
 **Lack of documentation:** The Wio Terminal and the [arduinoFFT library](https://www.arduino.cc/reference/en/libraries/arduinofft/) which our signal processing relies on were lacking in documentation. Additionally, because we were using a microcontroller that was not extremely well supported on the Arduino platform, we encountered many wiring problems that required trial and error when it came to sending signals to the stepper motor and servos.
 
