@@ -6,21 +6,21 @@ category: Jekyll
 layout: post
 ---
 
-# Overview
+## Overview
 To initiate Allegro, a button is pressed on the Wio Terminal to start recording sounds. Then, over a set amount of time, the microphone records frequencies of the audio it hears and converts it into notes and lengths of time through our signal processing algorithm. The user would play the sequence of notes they would like to be replicated by the robot during this time period. Once the recording period is complete, Allegro will automatically move to the correct spots and play the notes back! Finally, the system prepares itself to run again by returning to the zero position.
 
-# Hardware
+## Hardware
 The first part of our hardware implementation consists of a single-axis linear rail providing prismatic motion through the use of an 8mm lead screw and rotating gantry.
 
 (pics)
 
 Additionally, we designed and manufactured a three-fingered hand to press the keys. It houses three Hosyond MG90S micro servos, each of which has a finger attached. The entire hand was 3D-printed in PLA on an Anycubic Kobra printer.
 
-# Software
+## Software
 
 The overall flow of the software is to first do signal processing for a set period of time to determine inputs to the path planning algorithm, then run the path planning algorithm, then move the fingers to the correct spots and actuate accordingly. All the software was coded in C++ and is connected to the hardware using a Seeeduino Wio Terminal microcontroller and the Arduino IDE. The only library that we used was to control servos, which initially was the stock Servo library but eventually became the ServoEasing library.
 
-## Signal Processing
+### Signal Processing
 We use a Wio Terminal that we own for both signal processing and path planning. This is convenient because all code runs on one device, but this sacrifices computing power compared to that available on a computer. MATLAB code designed to be run on a computer was written before porting it to the Wio Terminal, and we ultimately decided to use the Wio Terminal alone because it cost extra effort to transfer data from the computer to the Wio Terminal.
 
 We use the built-in microphone of the Wio Terminal for audio input. Another higher quality microphone, the Adafruit I2S MEMS Microphone Breakout, was purchased but the Wio Terminal proved incompatible despite our best efforts to check specifications beforehand.
@@ -36,7 +36,7 @@ The detected frequency is continually printed in the Serial Monitor in the botto
 
 [![Signal processing demo](https://img.youtube.com/vi/JzqSpP-Z4GE/0.jpg)](https://www.youtube.com/watch?v=JzqSpP-Z4GE)
 
-## Path Planning
+### Path Planning
 The path planning and actuation algorithm takes in an array of notes that should be played, an array of the lengths of each note, and the size of the array. Initially, our group planned to use a tree recursive algorithm to decide which servo would require the least distance to be traveled, but were limited by computational flexibility. Therefore, we went with a simpler algorithm as pictured below.
 
 (pics)
