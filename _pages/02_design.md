@@ -28,4 +28,3 @@ In order to simplify path planning and hand design, we decided to focus on only 
 
 # Effectiveness
 Our design choices were able to meet the criteria we set. We chose a more robust, durable, and efficient solution by simplifying the problem down to only the hardware that we needed rather than using higher end hardware that may offer higher degrees of freedom at the cost of unnecessary complexity. Our linear rail system is much more robust and durable than a Sawyer arm, both limiting sources of error and simplifying movement. Our stepper motor could have been more power-efficient, but we chose the most cost-effective option. Overall, our choices followed the same principles as real engineering applications.
-
