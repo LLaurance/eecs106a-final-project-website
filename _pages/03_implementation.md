@@ -12,9 +12,19 @@ To initiate Allegro, a button is pressed on the Wio Terminal to start recording 
 ## Hardware
 The first part of our hardware implementation consists of a single-axis linear rail providing prismatic motion through the use of an 8mm lead screw and rotating gantry.
 
-(pics)
+![](../assets/1.jpg)
+
+![](../assets/2.png)
+
+![](../assets/3.jpg)
+
+![](../assets/4.png)
 
 Additionally, we designed and manufactured a three-fingered hand to press the keys. It houses three Hosyond MG90S micro servos, each of which has a finger attached. The entire hand was 3D-printed in PLA on an Anycubic Kobra printer.
+
+![](../assets/5.png)
+
+![](../assets/6.png)
 
 ## Software
 
