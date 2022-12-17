@@ -18,5 +18,10 @@ layout: post
 ## Servo Datasheet
 [MG90S Datasheet](https://html.alldatasheet.com/html-pdf/1132104/ETC2/MG90S/109/1/MG90S.html)
 
+## Wio Terminal
+[Homepage](https://www.seeedstudio.com/Wio-Terminal-p-4509.html)
+
+[Schematics](https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal-SCH-v1.2.pdf)
+
 ## Old Concept Sketch
 ![Old Concept Sketch](../assets/setup_cursed.png)
