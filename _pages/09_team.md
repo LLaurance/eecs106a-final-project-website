@@ -34,4 +34,4 @@ I wrote the path planning algorithm and stepper/servo actuation software, worked
 
 Wiped down the table
 
-![Wiped down the table](https://github.com/LLaurance/eecs106a-final-project-website/blob/master/assets/IMG_1292.jpeg)
+![Wiped down the table](../assets/IMG_1292.jpeg)
