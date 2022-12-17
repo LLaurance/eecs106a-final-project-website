@@ -12,19 +12,19 @@ To initiate Allegro, a button is pressed on the Wio Terminal to start recording 
 ## Hardware
 The first part of our hardware implementation consists of a single-axis linear rail providing prismatic motion through the use of an 8mm lead screw and rotating gantry.
 
-[![Hardware image 1](/assets/1.jpg)](/assets/1.jpg)
+![Hardware image 1](https://i.imgur.com/t9vUYOM.jpeg)
 
-[![Hardware image 2](/assets/2.png)](/assets/2.png)
+![Hardware image 2](https://i.imgur.com/HwoMEqC.jpeg)]
 
-[![Hardware image 3](/assets/3.jpg)](/assets/3.jpg)
+![Hardware image 3](https://i.imgur.com/BiXredU.jpeg)
 
-[![Hardware image 4](/assets/4.png)](/assets/4.png)
+![Hardware image 4](https://i.imgur.com/S9Z1vdd.jpeg)
 
 Additionally, we designed and manufactured a three-fingered hand to press the keys. It houses three Hosyond MG90S micro servos, each of which has a finger attached. The entire hand was 3D-printed in PLA on an Anycubic Kobra printer.
 
-[![Hardware image 5](/assets/5.png)](/assets/5.png)
+![Hardware image 5](https://i.imgur.com/5wIvN29.png)
 
-[![Hardware image 6](/assets/6.png)](/assets/6.png)
+![Hardware image 6](https://i.imgur.com/wzgrNEZ.jpeg)
 
 ## Software
 
@@ -49,8 +49,7 @@ The detected frequency is continually printed in the Serial Monitor in the botto
 ### Path Planning
 The path planning and actuation algorithm takes in an array of notes that should be played, an array of the lengths of each note, and the size of the array. Initially, our group planned to use a tree recursive algorithm to decide which servo would require the least distance to be traveled, but were limited by computational flexibility. Therefore, we went with a simpler algorithm as pictured below.
 
-[![Path planning algorithm](/assets/algoDiagram.png)](/assets/algoDiagram.png)
-[![Path planning algorithm](https://github.com/LLaurance/eecs106a-final-project-website/blob/master/assets/algoDiagram.png)](https://github.com/LLaurance/eecs106a-final-project-website/blob/master/assets/algoDiagram.png)
+![Path planning algorithm](https://i.imgur.com/HiXcGNs.png)
 
 
 This process repeats for every note that needs to be played until an array of fingers to be used at each note index is created. Once this array is created, our software loops through each index of the note, length, and finger index arrays, and calls a helper function that moves the gantry as well as actuates the servo controlling the finger we chose. In this helper method, we calculate the amount of steps we need to input to the stepper motor to move the finger to the correct location on the keyboard. Calculating the amount of steps is done using the following formula:
