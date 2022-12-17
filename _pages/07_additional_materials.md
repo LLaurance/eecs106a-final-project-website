@@ -6,21 +6,14 @@ category: Jekyll
 layout: post
 ---
 
-• code, URDFs, and launch files you wrote
+## CAD Model
+[CAD Model](https://drive.google.com/drive/folders/1NKvvTTeGucDFC3zsNJW7TIO1lIUEaXA0)
 
-• CAD models for any hardware you designed
+## Code
+[Repository](https://llaurance.github.io/eecs106a-final-project-website/)
 
-• data sheets for components used in your system
+## Microphone Datasheet
+[GoerTek Electret Condenser Microphone](https://datasheet.lcsc.com/lcsc/1809140715_Goertek-B4013AM422-42_C233793.pdf)
 
-• any additional videos, images, or data from your finished solution
-
-• links to other public sites (e.g., GitHub), if that is where your files are stored
-
-# CAD model
-(placeholder)
-
-# Code
-[Link to repository](https://llaurance.github.io/eecs106a-final-project-website/)
-
-# Additional demos
-(placeholder)
+## Servo Datasheet
+[MG90S Datasheet](https://html.alldatasheet.com/html-pdf/1132104/ETC2/MG90S/109/1/MG90S.html)
