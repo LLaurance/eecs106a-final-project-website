@@ -6,7 +6,7 @@ category: Jekyll
 layout: post
 ---
 
-Allegro in C(++) is an exploration of using robots to create music. Our goal was to create a robot that can replicate a sequence of notes played on an electronic keyboard. To do this, our robot listens to a musical motif played by a user, computes its own plan to reproduce it, then actuates to move its hand to the appropriate positions to play those notes.
+Allegro in C(++) is an exploration of using robots to create music. Our goal was to create a robot that can replicate a sequence of notes played on an electronic keyboard. To do this, Allegro listens to a musical motif played by a user, computes its own plan to reproduce it, then actuates to move its hand to the appropriate positions to play those notes.
 
 # Points of Interest
 This project involves imitating a human activity, and is accomplished by splitting the task into multiple components that a computer can process. To attain success, a wide variety of problems must be solved:
