@@ -24,4 +24,4 @@ layout: post
 [Schematics](https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal-SCH-v1.2.pdf)
 
 ## Old Concept Sketch
-![Old Concept Sketch](../assets/setup_cursed.png)
+[Old Concept Sketch](https://i.imgur.com/wpT108z.png)
