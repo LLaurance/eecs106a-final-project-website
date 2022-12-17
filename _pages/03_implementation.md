@@ -7,14 +7,20 @@ layout: post
 ---
 
 # Overview
-The complete system begins at accepting audio input, processing the audio to obtain the corresponding piano keys and durations, then operating the motors to physically press on the keys. Finally, the system prepares itself to run again.
+To initiate Allegro, a button is pressed on the Wio Terminal to start recording sounds. Then, over a set amount of time, the microphone records frequencies of the audio it hears and converts it into notes and lengths of time through our signal processing algorithm. The user would play the sequence of notes they would like to be replicated by the robot during this time period. Once the recording period is complete, Allegro will automatically move to the correct spots and play the notes back! Finally, the system prepares itself to run again by returning to the zero position.
 
 # Hardware
-We 3D printed our own end effector and mounted it onto a gantry that allows horizontal movement . . .
+The first part of our hardware implementation consists of a single-axis linear rail providing prismatic motion through the use of an 8mm lead screw and rotating gantry.
 
-(pics and vids)
+(pics)
 
-# Signal Processing
+Additionally, we designed and manufactured a three-fingered hand to press the keys. It houses three Hosyond MG90S micro servos, each of which has a finger attached. The entire hand was 3D-printed in PLA on an Anycubic Kobra printer.
+
+# Software
+
+The overall flow of the software is to first do signal processing for a set period of time to determine inputs to the path planning algorithm, then run the path planning algorithm, then move the fingers to the correct spots and actuate accordingly. All the software was coded in C++ and is connected to the hardware using a Seeeduino Wio Terminal microcontroller and the Arduino IDE. The only library that we used was to control servos, which initially was the stock Servo library but eventually became the ServoEasing library.
+
+## Signal Processing
 We use a Wio Terminal that we own for both signal processing and path planning. This is convenient because all code runs on one device, but this sacrifices computing power compared to that available on a computer. MATLAB code designed to be run on a computer was written before porting it to the Wio Terminal, and we ultimately decided to use the Wio Terminal alone because it cost extra effort to transfer data from the computer to the Wio Terminal.
 
 We use the built-in microphone of the Wio Terminal for audio input. Another higher quality microphone, the Adafruit I2S MEMS Microphone Breakout, was purchased but the Wio Terminal proved incompatible despite our best efforts to check specifications beforehand.
@@ -30,9 +36,15 @@ The detected frequency is continually printed in the Serial Monitor in the botto
 
 [![Signal processing demo](https://img.youtube.com/vi/JzqSpP-Z4GE/0.jpg)](https://www.youtube.com/watch?v=JzqSpP-Z4GE)
 
-# Path Planning
-The input to this stage are the key-duration pairs obtained from signal processing . . .
+## Path Planning
+The path planning and actuation algorithm takes in an array of notes that should be played, an array of the lengths of each note, and the size of the array. Initially, our group planned to use a tree recursive algorithm to decide which servo would require the least distance to be traveled, but were limited by computational flexibility. Therefore, we went with a simpler algorithm as pictured below.
 
-Rezeros after every trial. . .
+(pics)
 
-(pics and vids)
+This process repeats for every note that needs to be played until an array of fingers to be used at each note index is created. Once this array is created, our software loops through each index of the note, length, and finger index arrays, and calls a helper function that moves the gantry as well as actuates the servo controlling the finger we chose. In this helper method, we calculate the amount of steps we need to input to the stepper motor to move the finger to the correct location on the keyboard. Calculating the amount of steps is done using the following formula:
+
+(formula)
+
+Once the distance to move is found, we move the stepper to the correct spot and lower the servo controlling our chosen finger to the pressed position. We then wait for the length of time measured and then move the servo back to the resting position above the key. 
+
+We continue this workflow until we’ve played all the notes in the input array, and then return the gantry to the zero position.
