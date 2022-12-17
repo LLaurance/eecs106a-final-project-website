@@ -43,8 +43,8 @@ The path planning and actuation algorithm takes in an array of notes that should
 
 This process repeats for every note that needs to be played until an array of fingers to be used at each note index is created. Once this array is created, our software loops through each index of the note, length, and finger index arrays, and calls a helper function that moves the gantry as well as actuates the servo controlling the finger we chose. In this helper method, we calculate the amount of steps we need to input to the stepper motor to move the finger to the correct location on the keyboard. Calculating the amount of steps is done using the following formula:
 
-(formula)
+$$\textup{steps to travel} = \textup{key length} \times \textup{note index} \times \textup{steps per mm} - \textup{finger offset} - \textup{current position}$$
 
 Once the distance to move is found, we move the stepper to the correct spot and lower the servo controlling our chosen finger to the pressed position. We then wait for the length of time measured and then move the servo back to the resting position above the key. 
 
-We continue this workflow until we’ve played all the notes in the input array, and then return the gantry to the zero position.
+We continue this workflow until we have played all the notes in the input array, and then return the gantry to the zero position.
